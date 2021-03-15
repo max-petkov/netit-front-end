@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Layout - Maximilian Petkov</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Navigation bar-->
+        <div class="sticky-nav">
+
+            <nav class="nav-header">
+                <figure class="logo">
+                    <a href="#home">
+                        <img src="assets/images/logo.svg" alt="logo">
+                    </a>
+                </figure>
+                <div class="links-header">
+                    <a href="#home">Product</a>
+                    <a href="#feature">Features</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#frAskQ">FAQ</a>
+                    <a href="#contactUs">Contact Us</a>
+                </div>
+                <div onclick="showLink(this)" class="burger-menu">
+                    <div class="burger-bar burger-bar-one"></div>
+                    <div class="burger-bar burger-bar-two"></div>
+                    <div class="burger-bar burger-bar-three"></div>
+                </div>       
+            </nav>    
+
+        </div>
+        <!-- Header -->
+        <header id="home">
+            <section class="section-header">
+                <h1><span class="span-second-primary">OUR PRODUCT IS <span class="span-first-primary">BETTER</span> THAN OTHER</span></h1>
+                <figure class="image-header-tablet-size">
+                    <img src="assets/images/img-1.png" alt="smartPhone&smartWatch" width="500px">
+                </figure>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias necessitatibus saepe, repellat, voluptatum autem incidunt qui.</p>
+                <div class="btns-header">
+                    <button class="btn btn-first-primary">Get Free App</button>
+                    <button class="btn btn-second-primary">Go Premium</button>
+                </div>
+            </section>
+            <figure class="image-header">
+                <img src="assets/images/img-1.png" alt="smartPhone&smartWatch" width="500px">
+            </figure>
+        </header>
+
+        <!-- Features -->
+        <div class="sub-wrapper">
+
+            <section id="feature" class="feature-section">
+
+                <section class="feature-heading">
+                    <h4>WHY CHOOSING US</h4>
+                    <h2>
+                        <span class="span-second-primary">Easy Process With </span><span class="span-first-primary">Best Features</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquam eius obcaecati voluptatum dolor minus. Lorem amet consectetur adipisicing elit.</p>
+                </section>
+
+                <section class="feature-options">
+
+                    <section class="flex-feature feature-option-one">
+
+                        <article class="options">
+                            <div class="flex-order">
+                                <h3>Heart Rate Monitor</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur, lorem adipisicing elit. Quasi amet labore.</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </article>
+
+                        <article class="options">
+                            <div class="flex-order">
+                                <h3>Blood Pressure Manager</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur, lorem adipisicing elit. Quasi amet labore.</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-briefcase-medical"></i>
+                            </div>
+                        </article>
+
+                        <article class="options">
+                            <div class="flex-order">
+                                <h3>Alarm Alert</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur, lorem adipisicing elit. Quasi amet labore.</p>
+                            </div>
+                            <div>
+                                <i id="alarmIcon" class="fas fa-bell"></i>
+                            </div>
+                        </article>
+
+                    </section>
+
+                    <figure class="flex-feature image-feature">
+                        <img src="assets/images/img-2.png" alt="smartWatch#1" width="250px">
+                    </figure>
+
+                    <section class="flex-feature feature-option-two">
+
+                        <article class="options">
+                             <div>
+                                 <i id="locationIcon" class="fas fa-map-marker-alt"></i>
+                             </div>
+                            <div class="flex-order-two">
+                                <h3>Location Finder</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit, lorem. Quasi amet labore.</p>
+                            </div>
+                        </article>
+
+                        <article class="options">
+                            <div>
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <div class="flex-order-two">
+                                <h3>Fingerprint Lock</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi amet labore.</p>
+                            </div>
+                        </article>
+
+                        <article class="options">
+                            <div>
+                                <i id="mobileIcon" class="fas fa-mobile"></i>
+                            </div>
+                            <div class="flex-order-two">
+                                <h3>Camera and Bluetooth</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi amet labore.</p>
+                            </div>
+                        </article>
+
+                    </section>
+
+                </section>
+            </section>
+        </div>
+
+        <!-- Technical Specs -->
+        <section id="testimonials" class="technical-specs">
+
+            <section class="technical-specs-heading">
+                <h4>GET MORE DETAILS</h4>
+                <h2>
+                    <span class="span-second-primary">Awesome Technical </span><span class="span-first-primary">Specs</span>
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquam eius obcaecati voluptatum dolor minus. Lorem amet consectetur adipisicing elit.</p>
+            </section>
+
+            <section class="technical-specs-info">
+
+                <figure class="flex-specs image-technical-specs">
+                    <img src="assets/images/img-3.png" alt="smartWatch#2" width="350px">
+                </figure>
+
+                <section class="flex-specs technical-specs-options">
+
+                    <article class="spec-option">
+                        <i class="fas fa-camera-retro"></i>
+                        <h3>Camera Available</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab exercitationem fuga sunt suscipit pariatur error.</p>
+                    </article>
+
+                    <article class="spec-option">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Eco Friendly</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab exercitationem fuga sunt suscipit pariatur error.</p>
+                    </article>
+
+                    <article class="spec-option">
+                        <i class="fas fa-cog"></i>
+                        <h3>Readable in <br>Sunlight</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab exercitationem fuga sunt suscipit pariatur error.</p>
+                    </article>
+
+                    <article class="spec-option">
+                        <i id="databaseIcon" class="fas fa-database"></i>
+                        <h3>30 Days Battery <br>Time</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab exercitationem fuga sunt suscipit pariatur error.</p>
+                    </article>
+
+                </section>
+            </section>
+        </section>
+
+        <!-- About US -->
+        <div class="sub-wrapper">
+            <section class="about-us">
+
+                <section class="about-heading">
+                    <h2>
+                        <span class="span-second-primary">What Buyers Says About Us</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquam eius obcaecati voluptatum dolor minus.Lorem amet consectetur adipisicing elit.</p>
+                </section>
+
+                <section class="buyers-section">
+
+                    <article class="buyer-post">
+
+                        <div class="prof-pic">
+                            <img src="assets/images/profile-2.png" alt="person" width="100px">
+                        </div>
+                        <div class="star-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>
+                            <span class="span-second-primary">Ali Boukeroui</span>
+                        </h4>
+                        <a href="#" class="profile-website">indiehackers.com</a>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque, dolore praesentium consectetur, nemo cum vitae vel nam rem recusandae sed porro nostrum molestiae ad quia suscipit quis labore a.</p>
+                        <div class="quotes-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </article>
+
+                    <article class="buyer-post">
+                    
+                        <div class="prof-pic">
+                            <img src="assets/images/profile-2.png" alt="person" width="100px">
+                        </div>
+                        <div class="star-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>
+                            <span class="span-second-primary">Ali Boukeroui</span>
+                        </h4>
+                        <a href="#" class="profile-website">indiehackers.com</a>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque, dolore praesentium consectetur, nemo cum
+                            vitae vel nam rem recusandae sed porro nostrum molestiae ad quia suscipit quis labore a.</p>
+                        <div class="quotes-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </article>
+
+                    <article class="buyer-post">
+                    
+                        <div class="prof-pic">
+                            <img src="assets/images/profile-2.png" alt="person" width="100px">
+                        </div>
+                        <div class="star-icon">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>
+                            <span class="span-second-primary">Ali Boukeroui</span>
+                        </h4>
+                        <a href="#" class="profile-website">indiehackers.com</a>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque, dolore praesentium consectetur, nemo cum
+                            vitae vel nam rem recusandae sed porro nostrum molestiae ad quia suscipit quis labore a.</p>
+                        <div class="quotes-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </div>
+
+        <!-- Pricing -->
+        <section id="pricing" class="pricing">
+
+            <section class="price-heading">
+                <h2>
+                    <span class="span-second-primary">PRICING</span>
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquam eius obcaecati voluptatum dolor minus.Lorem amet consectetur adipisicing elit.</p>
+            </section>
+
+            <section class="discount">
+
+                <section class="person-discount">
+                    <div class="pers-pic">
+                        <img src="assets/images/profile-2.png" alt="person" width="70px">
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia laboriosam aliquid ipsam facilis consequuntur iure eos sit dolores eligendi repellendus at voluptas enim commodi sunt, distinctio aperiam nam alias eaque!</p>
+                    <br>
+                    <h4>Ali Boukeroui</h4>
+                    <a href="#" class="pers-website">indiehackers.com</a>
+                    <div class="person-star-icon">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="person-quotes-icon">
+                        <i id="quotes" class="fas fa-quote-left"></i>
+                    </div>
+                </section>
+
+                <section class="discount-value">
+                    <div class="discount-heading">
+                        <h3>
+                            <span class="span-second-primary">Free Shipping</span>
+                        </h3>
+                        <div class="promotion">
+                            <h2>$300</h2>
+                            <div class="promotion-value">
+                                <p>50% off</p>
+                            </div>
+                        </div>
+                        <h1>
+                            <span class="span-second-primary">$149</span>
+                        </h1>
+                        <h5><span class="span-second-primary">90 DAYS MONEY BACK GUARENTEED</span></h5>
+                    </div>
+                    <ul>
+                       <li>The Watch</li> 
+                       <li>+Bonus: Accessories</li> 
+                       <li>Lifetime Mobile App</li> 
+                    </ul>
+                    <div class="discount-btn">
+                    <button class="purchase-btn">Buy Now</button>
+                    <p>208 Left. Discount end after 2 weeks</p>
+                    </div>
+                </section>
+
+            </section>
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section id="frAskQ" class="faq">
+
+            <h2 class="faq-heading">
+                <span class="span-second-primary">Frequently Asked Questions</span>
+            </h2>
+
+            <section class="most-faq">
+                <article class="question">
+                    <h3>What caused that horrible financial crisis in 2008?</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi praesentium temporibus quis. Error sequi molestias sit minus fugit odit eius laudantium repudiandae, corrupti deleniti quas dolore magni ut quis. Rerum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </article>
+                <article class="question">
+                    <h3>Why does SouthWest only fly 737's?</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi praesentium temporibus quis. Error sequi
+                        molestias sit minus fugit odit eius laudantium repudiandae, corrupti deleniti quas dolore magni ut quis. Rerum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </article>
+                <article class="question">
+                    <h3>How are interest rates adjusted?</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi praesentium temporibus quis. Error sequi
+                        molestias sit minus fugit odit eius laudantium repudiandae, corrupti deleniti quas dolore magni ut quis. Rerum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </article>
+                <article class="question">
+                    <h3>What's up with the IMF bailing out all of these countries?</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi praesentium temporibus quis. Error sequi
+                        molestias sit minus fugit odit eius laudantium repudiandae, corrupti deleniti quas dolore magni ut quis. Rerum. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </article>
+            </section>
+
+        </section>
+        <!-- Contact Us -->
+        
+        <section id="contactUs" class="contacts">
+
+            <section class="get-in-touch">
+                <div class="get-in-touch-heading">
+                    <h2>
+                        <span class="span-second-primary">Get In Touch</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus sunt nisi illum molestiae? Veniam debitis itaque accusamus beatae corrupti voluptatem, architecto eos?</p>
+                </div>
+                <ul class="get-in-touch-list-one">
+                    <h4>
+                        <span class="span-second-primary">COLLABORATE</span>
+                    </h4>
+                    <li>
+                        <a href="mailto:support@example.com">Support@example.com</a>
+                    </li>
+                    <li>Fax:(099) 453-1357</li>
+                </ul>
+                <ul class="get-in-touch-list-two">
+                    <h4>
+                        <span class="span-second-primary">COLLABORATE</span>
+                        </h4>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:support@example.com">Support@example.com</a>
+                        </li>
+                        <li><i class="fas fa-phone"></i>Fax:(099) 453-1357</li>
+                </ul>
+            </section>
+
+            <section class="message">
+                <div class="message-heading">
+                    <h2>
+                        <span class="span-second-primary">Contact Us</span>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus sunt nisi illum molestiae.</p>
+                </div>
+                <form>
+                    <input type="text" placeholder="Full Name" min="3" max="50" required>
+                    <input type="email" placeholder="Email" max="50" required>
+                    <textarea placeholder="Message" cols="30" rows="10" minlength="3" maxlength="300" required></textarea>
+                    <button type="submit" class="btn-submit">SEND MESSAGE</button>
+                </form>
+            </section>
+
+        </section>
+
+        <!-- Purchase Now section -->
+        <section class="purchase-now">
+            <div class="purchase-now-heading">
+                <h2>
+                    <span class="span-second-primary">Buy Now And Save 50%</span>
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate aliquam eius obcaecati voluptatum dolor minus.Loremamet consectetur adipisicing elit.</p>
+                <button class="purchase-now-btn">Buy Now</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <nav class="bottom-nav-first">
+                <figure class="footer-logo">
+                    <a href="#"><img src="assets/images/logo2.png" alt="logo"></a>
+                </figure>
+                <div class="footer-links">
+                    <a href="#">Affiliate</a>
+                    <a href="#">Entreprise</a>
+                    <a href="#">Products</a>
+                    <a href="#">Account</a>
+                </div>
+            </nav>
+            <hr>
+            <nav class="bottom-nav-second">
+                <div class="social-media-icons">
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:yourbrandname@support.com">
+                        <i id="bottom-envelope" class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy 2020 YourBrandName. All Rights Reserved</p>
+                </div>
+            </nav>
+
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
