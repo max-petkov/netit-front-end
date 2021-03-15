@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation - Maximilian Petkov</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+</head>
+<body>
+    <!-- <header> елемента(родител) ми е контейнера, който обхваща всички елементи(деца). Тези деца са <nav>; <div class="archer-container"> и <div class="runner-container">.
+    В <header> съм сложил background-image, които са дървото и тревата (това е нашия фон). Съответно на нашия фон слагаме стрелеца и миньончето-->
+    <header>
+
+        <!-- <nav> елемента е навигацията с линковете -->
+        <nav>
+            <div class="burger-menu" onclick="dropDownMenu()">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+
+            <div class="nav-links" id="displayLinks">  
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Pictures</a>
+                <a href="#">Animations</a>
+                <a href="#">Contacts</a>
+            </div>
+        </nav>
+
+    <!-- class="archer-container" тук ми е снимката на стрелеца и стрелата  -->
+        <div class="archer-container">
+            <div class="archer"></div>
+            <div class="arrow"></div>
+        </div>
+
+    <!-- class="runner-container" тук ми е снимката на бягащия миньон -->
+        <div class="runner-container">
+            <div class="runner"></div>
+        </div>
+    </header>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

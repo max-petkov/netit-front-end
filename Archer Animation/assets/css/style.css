@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background images */
+header {
+    /* Това е фона на страницата, който съдържа две снимки. дървото и тревата */
+
+    background-image: url('../images/grass.png'), url('../images/forest.png');
+    /* Първата ми снимка е тревата, а втората дървото, за да може тревата да излезне пред дървото  */
+
+    background-repeat:repeat-x, no-repeat;
+    background-position: bottom, -150px bottom; 
+    background-size: 200px, 700px;
+    /* Понеже имам две снимки,  на background-repeat: repeat-x (отговаря за тревата, която ще се повтаря по хоризонтала), no-repeat(отговаря за дървото и няма да се повтаря).
+     По-същият начин е и за background-position и background-size*/
+
+    height: 100vh;
+    /* Това е за да може да заеме цялата дължина на екрана, независимо дали е на телефон, таблет, лаптоп, монитор и т.н. */
+
+    overflow: hidden;
+
+    /* Дал съм position:relative, защото децата, които имат position: absolute ще мога да ги наместя спрямо родителя */
+    position: relative;
+}
+
+/* Navigation menu */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+a + a {
+    margin-left: 25px;
+}
+
+/* for JS */
+#displayLinks.show-links {
+    display: flex;
+}
+
+/* Burger icon will be displayed after reaching 768px*/
+.burger {
+    width: 30px;
+    height: 3px;
+    background-color:white;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger + .burger {
+    margin-top: 6px;
+}
+
+/* Archer & Arrow Animation */
+.archer {
+    position: absolute;
+     /* Тук имам position: absolute и мога да го наместя спрямо елемента, който е с position: relative(съответно е <header>) */
+
+    background: url("../images/arrow-animations1.png") -100px 0px;
+    width: 150px;
+    height: 290px;
+
+    bottom: 15px;
+    left: 35px;
+     /* Това са стойностите, които отговарят, къде ще се намира в пространството тази снимката(съответно човечетата и стрелата) */
+
+    animation-name: archerSteps;
+    animation-timing-function: steps(4);
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.arrow {
+    position: absolute;
+    /* Тук имам position: absolute и мога да го наместя спрямо елемента, който е с position: relative(съответно е <header>) */
+
+    background: url("../images/arrow-animations.png") -680px -100px;
+    width: 100px;
+    height: 50px;
+
+    bottom: 92px;
+    left: 150px;
+     /* Това са стойностите, които отговарят, къде ще се намира в пространството тази снимката(съответно човечетата и стрелата) */
+
+    opacity: 0;
+    animation-name: flyingArrow;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-delay: 0.8s;
+}
+
+/* Runner Animation */
+
+.runner {
+    position: absolute;
+    /* Тук имам position: absolute и мога да го наместя спрямо елемента, който е с position: relative(съответно е <header>) */
+
+    background: url("../images/running-man1.png") 0 -63px;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 60px;
+
+    bottom: 0;
+    left: 50%;
+     /* Това са стойностите, които отговарят, къде ще се намира в пространството тази снимката(съответно човечетата и стрелата) */
+
+    animation-name: runnerSteps;
+    animation-timing-function: steps(8);
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.runner-container {
+    position: absolute;
+     /* Тук имам position: absolute и мога да го наместя спря родителя, който е с position: relative */
+
+    bottom: 0;
+    left: 50%;
+    /* Това са стойностите, които отговарят, къде ще се намира в пространството тази снимката(съответно човечетата и стрелата) */
+
+    animation-name: runningFromArrow;
+    animation-iteration-count: 1;
+    animation-duration: 7.5s;
+    animation-delay: 1s;
+}
+
+@keyframes archerSteps {
+    100% {
+        background-position: -665px 0;
+    }
+}
+
+@keyframes flyingArrow {
+    0% {
+        opacity: 1;
+        transform: translateX(-1vw) translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(110vw) translateY(11vh);
+    }
+}
+
+@keyframes runnerSteps {
+    100% {
+        background-position: -610px -65px;
+    }
+}
+
+@keyframes runningFromArrow {
+    0% {
+        transform: translateX(0vw);
+    }
+
+
+    100% {
+        transform: translateX(110vw);
+    }
+}
